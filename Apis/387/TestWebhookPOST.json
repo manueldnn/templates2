@@ -1,0 +1,38 @@
+{
+  "Name": "TestWebhook",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Inputs": [],
+  "Actions": [
+    {
+      "ActionType": "SendMail",
+      "OrderIndex": 0,
+      "Parameters": {
+        "From": "",
+        "To": "bogdan@plantanapp.com",
+        "DetermineEmail": "",
+        "ToAllUsers": "",
+        "ReplyTo": "",
+        "Cc": "",
+        "Bcc": "",
+        "Subject": "Webhook",
+        "Format": {
+          "Expression": "",
+          "Value": "Html",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "Body": "<p><br><br><!--StartFragment--><span style=\"color: rgb(158, 158, 158); font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\">[RawInput]</span><!--EndFragment--><br><br><br></p>",
+        "Headers": "",
+        "PortalFiles": "",
+        "FileToken1": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
