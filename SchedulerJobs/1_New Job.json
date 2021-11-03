@@ -1,0 +1,9 @@
+{
+  "ApiId": "f243cfb837761d7648eba4",
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "New Job",
+  "Triggers": [],
+  "Actions": [],
+  "OnErrorActions": []
+}
