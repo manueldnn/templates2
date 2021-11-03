@@ -1,0 +1,63 @@
+{
+  "InputFields": [],
+  "OutputFields": [
+    {
+      "Id": 7,
+      "Name": "CmdOutput",
+      "DefaultValue": "[CmdOutput]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 2,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "Id": 2,
+  "UniqueId": "62d6f138-4fea-48f4-a53c-8c3fa3245261",
+  "EnvironmentId": 1,
+  "Name": "Powershell",
+  "Description": "",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 4,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 5,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunPowerShellScript",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 22,
+            "Name": "Script",
+            "Value": "dir w:\\www\\SelfReg6EB496EC7067461",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 5,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 23,
+            "Name": "OutputTokenName",
+            "Value": "CmdOutput",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 5,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1eum2vl"
+      }
+    ]
+  },
+  "CreatedBy": 3,
+  "CreatedOn": "2021-10-25T08:32:53.6803719+00:00",
+  "LastModifiedBy": 3,
+  "LastModifiedOn": "2021-10-25T08:36:19.0799966+00:00",
+  "DiagramXML": null,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}
