@@ -1,0 +1,48 @@
+[
+  {
+    "Id": 19,
+    "UniqueId": "c56b285c-c414-45e8-8a3f-3e39bbfaa171",
+    "EntityVersionId": 11,
+    "Name": "Name",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 20,
+    "UniqueId": "fa605281-f899-4eb3-8ab7-aa74057a7d4b",
+    "EntityVersionId": 11,
+    "Name": "Email",
+    "Type": {
+      "Id": "Email",
+      "Name": "Email",
+      "InputType": {
+        "Id": "Email",
+        "Name": "Email",
+        "ValueType": "String",
+        "Length": 320,
+        "Icon": "mail_outline"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  }
+]
