@@ -1,0 +1,29 @@
+<module type="Bring2mindDMX" version="06.04.07.00">
+    <contentKey />
+    <moduleID>451</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions />
+    <title>Bring2mind\DMX</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>290eaec6-ffc3-44bf-b2ae-7709687258d1</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Bring2mind\DMX</definition>
+    <moduledefinition>Bring2mind\DMX</moduledefinition>
+</module>
