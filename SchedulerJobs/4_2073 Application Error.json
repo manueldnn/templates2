@@ -1,0 +1,58 @@
+{
+  "ApiId": "19434e81d3d7ee160fead6",
+  "ContextPortal": -1,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "2073 Application Error",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "AppError",
+      "Parameters": {}
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "LogEvent",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "Parameters": {
+        "EventType": {
+          "Expression": "",
+          "Value": "ADMIN_ALERT",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "UserID": "4",
+        "LogProperties": [
+          {
+            "value": "[Exception]",
+            "name": "Exception"
+          },
+          {
+            "value": "[ExceptionType]",
+            "name": "ExceptionType"
+          },
+          {
+            "value": "[ExceptionMessage]",
+            "name": "ExceptionMessage"
+          },
+          {
+            "value": "[ExceptionStack]",
+            "name": "ExceptionStack"
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": [
+    {
+      "ActionType": "LogError",
+      "ExecutionType": "OnError",
+      "OrderIndex": 1,
+      "Parameters": {
+        "Message": "errors: ([ErrorType], [ErrorMessage], [StackTrace])"
+      }
+    }
+  ]
+}
