@@ -1,0 +1,30 @@
+{
+  "ApiId": "764e0ba3f389e177a2a9a7",
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "New Job_Copy",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "AppEnd",
+      "Parameters": {}
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "LogEvent",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "Parameters": {
+        "EventType": {
+          "Expression": "",
+          "Value": "",
+          "IsExpression": false
+        },
+        "UserID": "",
+        "LogProperties": ""
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
