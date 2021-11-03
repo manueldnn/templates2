@@ -1,0 +1,35 @@
+{
+  "ApiId": "464a75a33301cdbbd0d79b",
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Purge Schedule History",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "RepeatInterval",
+      "Parameters": {
+        "Start": {
+          "Date": "",
+          "Time": ""
+        },
+        "Interval": {
+          "Qty": 1,
+          "Unit": "Days"
+        },
+        "OnMissfire": {}
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "RunDnnJob",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "Parameters": {
+        "JobType": "DotNetNuke.Services.Scheduling.PurgeScheduleHistory, DOTNETNUKE",
+        "JobObjectDependencies": "ScheduleHistory"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
