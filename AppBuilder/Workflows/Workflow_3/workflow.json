@@ -1,0 +1,254 @@
+{
+  "InputFields": [],
+  "OutputFields": [
+    {
+      "Id": 8,
+      "Name": "ContactsStr",
+      "DefaultValue": "[ContactsStr]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 3,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "Id": 3,
+  "UniqueId": "99652502-0db5-472c-b063-284675ec080e",
+  "EnvironmentId": 1,
+  "Name": "List Tests",
+  "Description": "",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 5,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 6,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromExcelFile",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 24,
+            "Name": "FilePath",
+            "Value": "/Test Data.xlsx",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 25,
+            "Name": "EntityName",
+            "Value": "Contacts",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 26,
+            "Name": "IncludeAllFields",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 27,
+            "Name": "UseFirstRowAsColumnNames",
+            "Value": true,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 28,
+            "Name": "EntityProps",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 29,
+            "Name": "SheetName",
+            "Value": "Contacts",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 30,
+            "Name": "StartRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 31,
+            "Name": "EndRow",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 32,
+            "Name": "OnError",
+            "Value": {
+              "Id": 6,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 6,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0il01gm"
+      },
+      {
+        "Id": 10,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "InjectData",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 41,
+            "Name": "Data",
+            "Value": [
+              {
+                "value": "",
+                "name": "ContactsStr"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 10,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1f6ahld"
+      },
+      {
+        "Id": 7,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 33,
+            "Name": "EntityName",
+            "Value": "Contacts",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 7,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 34,
+            "Name": "Filters",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 7,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 35,
+            "Name": "ContextBehavior",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 7,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 37,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 7,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 8,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "InjectData",
+                  "OrderIndex": 0,
+                  "ActionParameters": [
+                    {
+                      "Id": 36,
+                      "Name": "Data",
+                      "Value": [
+                        {
+                          "value": "[ContactsStr] [Contacts:Name] [Contacts:Email]",
+                          "name": "ContactsStr"
+                        }
+                      ],
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 8,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ]
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 7,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 38,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 7,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 39,
+            "Name": "OnError",
+            "Value": {
+              "Id": 8,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 7,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0hux0b0"
+      }
+    ]
+  },
+  "CreatedBy": 3,
+  "CreatedOn": "2021-11-01T12:34:53.4178752+00:00",
+  "LastModifiedBy": 3,
+  "LastModifiedOn": "2021-11-01T12:43:30.6181412+00:00",
+  "DiagramXML": null,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}
