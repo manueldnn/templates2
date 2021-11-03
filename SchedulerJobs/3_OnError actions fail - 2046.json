@@ -1,0 +1,55 @@
+{
+  "ApiId": "7541f7b1f5e9c51f449611",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "OnError actions fail - 2046",
+  "Triggers": [],
+  "Actions": [
+    {
+      "ActionType": "RunSql",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "fewfew",
+        "BindTokens": "",
+        "OutputTokenName": "",
+        "ExtractColumns": "",
+        "OnError": [],
+        "ShowErrors": false
+      }
+    }
+  ],
+  "OnErrorActions": [
+    {
+      "ActionType": "LogEvent",
+      "ExecutionType": "OnError",
+      "OrderIndex": 1,
+      "Parameters": {
+        "EventType": {
+          "Expression": "",
+          "Value": "ADMIN_ALERT",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "UserID": "3",
+        "LogProperties": [
+          {
+            "value": "[ErrorMessage]",
+            "name": "ErrorMessage"
+          },
+          {
+            "value": "[ErrorType]",
+            "name": "ErrorType"
+          },
+          {
+            "value": "[StackTrace]",
+            "name": "StackTrace"
+          }
+        ]
+      }
+    }
+  ]
+}
