@@ -1,0 +1,51 @@
+{
+  "ApiId": "024534a20162d123141748",
+  "ContextPortal": -1,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Repeat Daily 1803",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "Daily",
+      "Parameters": {
+        "Time": "12:15:00 PM",
+        "DaysOfWeek": {
+          "MON": true,
+          "TUE": true,
+          "WED": true,
+          "THU": true,
+          "FRI": true
+        },
+        "OnMissfire": {
+          "Value": "DoNothing",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "LogEvent",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "Parameters": {
+        "EventType": {
+          "Expression": "",
+          "Value": "ADMIN_ALERT",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "UserID": "4",
+        "LogProperties": [
+          {
+            "value": "it run",
+            "name": "daily"
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
