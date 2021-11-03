@@ -1,0 +1,70 @@
+{
+  "ApiId": "5040de9dc44923eb1d5733",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "1196 User Database trigger",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "OnDbInsert",
+      "Parameters": {
+        "TableName": {
+          "Expression": "",
+          "Value": "dbo.Users",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "LogEvent",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "Parameters": {
+        "EventType": {
+          "Expression": "",
+          "Value": "ADMIN_ALERT",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "UserID": "4",
+        "LogProperties": [
+          {
+            "value": "[Row:ModifiedJsonData]",
+            "name": "ModifiedJsonData"
+          }
+        ]
+      }
+    },
+    {
+      "ActionType": "SendMail",
+      "Condition": "0",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 1,
+      "Parameters": {
+        "From": "",
+        "To": "",
+        "DetermineEmail": "",
+        "ToAllUsers": "",
+        "ReplyTo": "",
+        "Cc": "",
+        "Bcc": "",
+        "Subject": "",
+        "Format": {
+          "Expression": "",
+          "Value": "Html",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "Body": "",
+        "Headers": "",
+        "PortalFiles": "",
+        "FileToken1": ""
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
